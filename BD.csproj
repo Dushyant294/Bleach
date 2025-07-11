@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{FB1FD6B9-1960-46D4-B8DB-7ED8DC928AA1}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Bleach</RootNamespace>
-    <AssemblyName>Bleach</AssemblyName>
+    <RootNamespace>BD</RootNamespace>
+    <AssemblyName>BD</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
