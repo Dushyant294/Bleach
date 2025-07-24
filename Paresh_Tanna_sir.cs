@@ -7,7 +7,52 @@ namespace BD
 {
     internal class Program
     {
-        static void Main(string[] args)
+        //static void Swap(ref int a, ref int b)
+        //{
+
+        //    a = a + b;
+        //    b = a - b;
+        //    a = a - b;
+          
+
+        //}
+        static void change(ref int a, ref int b)
+        {
+
+            a = 100;
+            b = 200;
+
+        }
+        static void update(out int a, out int b)
+        {
+
+            a = 100;
+            //b = 200;
+        }
+
+            //static int addtition(int a, int b)
+            //{
+            //    int x = a + b;
+            //    return x;
+            //}
+            //static int subtraction(int a, int b)
+            //{
+            //    int x = a - b;
+            //    return x;
+            //}
+            //static int multipy(int a, int b)
+            //{
+            //    int x = a * b;
+            //    return x;
+            //}
+            //static float division(float a, float b)
+            //{
+            //    float x = a / b;
+            //    return x;
+            //}
+
+
+            static void Main()
         {
             //Console.WriteLine("hello  world!");
             //Console.WriteLine("enter no 1 :");
@@ -101,21 +146,27 @@ namespace BD
             //# * # *
             //special patter paresh tanna sir 
 
-           // array built in functions
-           // int[] a = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
-            //Console.WriteLine("Array Length: " + a.Length);
-            //Console.WriteLine("Array Max: " + a.Max());
-            //Console.WriteLine("Array Min: " + a.Min());
-            //Console.WriteLine("Array Sum: " + a.Sum());
-            //Console.WriteLine("Array Average: " + a.Average());
-            //Console.WriteLine("Array Reverse: " + string.Join(", ", a.Reverse()));
+            // array built in functions
+       
 
+            // int y = addtition(1, 2);
+            //Console.WriteLine("addition = " + y);
 
+            //int q = subtraction(1, 2);
+            //Console.WriteLine("subtraction = " + q);
+            //int z = multipy(1, 2);
+            //Console.WriteLine("multiplication = " + z);
+            //float v = division(1, 2);
+            //Console.WriteLine("division = " + v)
 
-
+            int a = 10, b = 20;
+            Console.WriteLine("Before swap ; a = {0} abd b = {1}", a , b);
+            change(ref a, ref b);
+            Console.WriteLine("after swap ; a = {0} abd b = {1}", a, b);
+            update(out a, out b);
+            Console.WriteLine("after swap ; a = {0} abd b = {1}", a, b);
             Console.Read();
-
-
+            //use ref keyword with int so you can access local variable 
         }
     }
 
