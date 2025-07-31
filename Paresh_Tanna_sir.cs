@@ -5,54 +5,67 @@ using System.Linq;
 
 namespace BD
 {
+   
+   /// <summary>
+   /// THIS IS IS DOCUMENTATION PART AND THIS CLASS INCLUDES IMPORTENT METHODS
+   /// </summary>
     internal class Program
     {
-        //static void Swap(ref int a, ref int b)
+        /// <summary>
+        /// use to share % values etc documation testing 
+        /// </summary>
+        static int c = 65;
+        /// <summary>
+        /// THIS IS A METHOD USED TO SWAP VALUES BETWEEN TWO VARIABLE 
+        /// </summary>
+        /// <param name="a"> FIRST REF PARAMETER OR VARIABLE</param>
+        /// <param name="b">SECOND REF PARAMETER OR VARIABLE</param>
+        static void Swap(ref int a, ref int b)
+        {
+           
+            a = a + b;
+            b = a - b;
+            a = a - b;
+
+
+        }
+        //static void change(ref int a, ref int b)
         //{
 
-        //    a = a + b;
-        //    b = a - b;
-        //    a = a - b;
-          
+        //    a = 100;
+        //    b = 200;
 
         //}
-        static void change(ref int a, ref int b)
-        {
+        //static void update(out int a, out int b)
+        //{
 
-            a = 100;
-            b = 200;
+        //    a = 100;
+        //    //b = 200;
+        //}
 
-        }
-        static void update(out int a, out int b)
-        {
-
-            a = 100;
-            //b = 200;
-        }
-
-            //static int addtition(int a, int b)
-            //{
-            //    int x = a + b;
-            //    return x;
-            //}
-            //static int subtraction(int a, int b)
-            //{
-            //    int x = a - b;
-            //    return x;
-            //}
-            //static int multipy(int a, int b)
-            //{
-            //    int x = a * b;
-            //    return x;
-            //}
-            //static float division(float a, float b)
-            //{
-            //    float x = a / b;
-            //    return x;
-            //}
+        //static int addtition(int a, int b)
+        //{
+        //    int x = a + b;
+        //    return x;
+        //}
+        //static int subtraction(int a, int b)
+        //{
+        //    int x = a - b;
+        //    return x;
+        //}
+        //static int multipy(int a, int b)
+        //{
+        //    int x = a * b;
+        //    return x;
+        //}
+        //static float division(float a, float b)
+        //{
+        //    float x = a / b;
+        //    return x;
+        //}
 
 
-            static void Main()
+        static void Main()
         {
             //Console.WriteLine("hello  world!");
             //Console.WriteLine("enter no 1 :");
@@ -147,7 +160,7 @@ namespace BD
             //special patter paresh tanna sir 
 
             // array built in functions
-       
+
 
             // int y = addtition(1, 2);
             //Console.WriteLine("addition = " + y);
@@ -160,13 +173,14 @@ namespace BD
             //Console.WriteLine("division = " + v)
 
             int a = 10, b = 20;
-            Console.WriteLine("Before swap ; a = {0} abd b = {1}", a , b);
-            change(ref a, ref b);
+            Console.WriteLine("Before swap ; a = {0} abd b = {1}", a, b);
+            Swap(ref a, ref b);
             Console.WriteLine("after swap ; a = {0} abd b = {1}", a, b);
-            update(out a, out b);
+            Swap(ref a, ref b);
             Console.WriteLine("after swap ; a = {0} abd b = {1}", a, b);
+            Console.WriteLine("c = " + c);
             Console.Read();
-            //use ref keyword with int so you can access local variable 
+            
         }
     }
 
